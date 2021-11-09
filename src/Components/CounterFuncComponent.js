@@ -83,7 +83,7 @@ export default function Counter(props) {
 
 
     return (
-        <CounterContainer>
+        <CounterContainer bg={"blue"}>
             {hour}:{minute}:{second}
             <ButtonReset action={resetCounter} children={() => <FiRefreshCcw color={'white'} width={20} />}/>
 
