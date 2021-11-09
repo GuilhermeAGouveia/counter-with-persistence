@@ -9,7 +9,7 @@ export const CounterContainer = styled.div `
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(98, 0, 255);
+    background: ${props => props.bg == null ? "rgb(98, 0, 255)" : props.bg};
     border-radius: 4px;
     font-family: sans-serif;
     font-weight: bold;
@@ -22,7 +22,7 @@ export const ButtonReset = styled.button`
     width: 30px;
     position: absolute !important;
     right: 0px;
-    background: rgb(130, 0, 255);
+    background: rgba(255, 255, 255, 0.2);
     border: none;
     display: flex;
     justify-content: center;
